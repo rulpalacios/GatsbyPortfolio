@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap');
+// Variables
+$my-purple: #8C43FF;
+$my-white: #FFFFFF;
+$cabin-font: 'Cabin', sans-serif;
+// MyClasses
+// body {
+//     font-family: 'Cabin', sans-serif;
+// }
+
+.certificate-img{
+    display: block;
+    margin: 0 auto;
+}
+.video {
+    width: 910px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+header {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+  
+.header__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+}
+.header-logo {
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    left: 10rem;
+    top: 6rem;
+}
+.header-title {
+    margin: 0;
+    padding: 0;
+    font: 44px "Arial";
+    text-align: center;
+    font-family: $cabin-font; 
+}
+.tech-text{
+    font-family: $cabin-font; 
+    font-size: 25px;
+}
+header img {
+    position: relative;
+} 
+header h1 {
+    position: relative;
+    color: white;
+}
+h1, p{
+    font-family: $cabin-font;    
+}
+.is-size-4 {
+    font-size: 1.5rem !important;
+}
+.copy {
+    opacity: 0.7;
+}
+.made-with-bulma{
+    opacity: 0.6;
+    margin-top: 0.7rem;
+}
+.made-with-gatsby{
+    opacity: 0.6;
+    margin-top: -1rem;
+}
+.column{
+    padding: 70px 45px !important;
+}
+.column-border {
+    border-right: 1px solid #E6ECF8;
+}
+.hero {
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
+}
+.hero-title{
+    font-family: $cabin-font;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+}
+.bio-title {
+    margin-bottom: 1.5rem;
+    font-family: $cabin-font;
+    font-size: 2rem;
+}
+.is-three-fifths{
+    flex: none;
+    width: 60%;
+}
+.is-centered {
+    justify-content: center;
+}
+.has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.is-256x256{
+    width: 256px;
+    height: 256px;
+}
+.bio-text {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+.bio {
+    padding: 9rem 1.5rem;
+    background-color: $my-purple;
+    color: $my-white;
+    font-family: $cabin-font;
+}
+.section {
+    padding: 5rem 1.5rem;
+}
+.skills {
+    margin-top: -6rem;
+    padding-bottom: 1rem;
+}
+.is-narrow{
+    max-width: 1200px;
+}
+
+
+@media screen and (max-width: 850px){
+    .header-logo{
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        left: 3rem;
+        top: 6rem;
+    }
+}
+@media screen and (min-width: 1280px){
+    .container {
+        max-width: 1152px;
+        width: 1152px;
+    }
+}
+
+.box {
+    padding: 0 !important;
+}
+.image-icon {
+    margin: 0 !important;
+    height: 60px !important;
+    fill: $my-purple;
+    color: $my-purple;
+    filter: $my-purple;
+}
+section {
+    display: block;
+}
+// Bulma ReWrite
+// Footer
+$footer-background-color: $my-purple;
+$footer-color: $my-white;
+$primary: $my-purple;
+
+
+@import "../../node_modules/bulma/bulma.sass";

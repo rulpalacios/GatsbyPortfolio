@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Full-Stack Software Engineer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@zraulpalacios`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +27,24 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-firestore`,
+      options: {
+        credential: require("./firebase-key.json"),
+        types: [{
+          type: `Project`,
+          collection: `projects`,
+          map: doc => ({
+            background: doc.background,
+            description: doc.description,
+            logo: doc.logo,
+            name: doc.name,
+            technologies: doc.technologies,
+            video: doc.video
+          })
+        }]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

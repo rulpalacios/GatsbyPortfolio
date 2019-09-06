@@ -7,39 +7,28 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "./layout.css"
+import "../css/mystyles.css"
+import MadeGatsby from '../images/made-with-gatsby.png'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <footer className="footer">
+        <div className="content has-text-centered">
+          <p className="copy">
+            Handcrafted with love by myself. © {new Date().getFullYear()}
+          </p>
+          <div className="made-with-bulma">
+            <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31"/>
+          </div>
+          <div className="made-with-gatsby">
+            <img src={MadeGatsby} alt="Made with Gatsby" width="80" height="20"/>
+          </div>
+          </div>
+      </footer>
       </div>
     </>
   )
