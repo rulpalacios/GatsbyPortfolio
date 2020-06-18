@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-firestore`,
       options: {
         credential: {
-          "apiKey": "AIzaSyBitAc2U9S0ZHUXsMk2JV_iA3Uf00W7Kns",
+          "apiKey": process.env.GATSBY_API_KEY,
           "authDomain": "portfolio-2d0d5.firebaseapp.com",
           "databaseURL": "https://portfolio-2d0d5.firebaseio.com",
           "projectId": "portfolio-2d0d5",
