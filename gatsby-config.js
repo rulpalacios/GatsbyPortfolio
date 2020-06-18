@@ -38,7 +38,16 @@ module.exports = {
           "storageBucket": process.env.GATSBY_STORAGE_BUCKET,
           "messagingSenderId": process.env.GATSBY_MESSAGING_SENDER,
           "appID": process.env.GATSBY_APP_ID,
+          "type": process.env.GATSBY_TYPE,
+          "project_id": process.env.GATSBY_PROJECT_ID,
+          "private_key_id": process.env.GATSBY_PRIVATE_KEY_ID,
           "private_key": process.env.GATSBY_PRIVATE_KEY,
+          "client_email": process.env.GATSBY_CLIENT_EMAIL,
+          "client_id": process.env.GATSBY_CLIENT_ID,
+          "auth_uri": process.env.GATSBY_AUTH_URI,
+          "token_uri": process.env.GATSBY_TOKEN_URI,
+          "auth_provider_x509_cert_url": process.env.GATSBY_AUTH_PROVIDER,
+          "client_x509_cert_url":process.env.GATSBY_CLIENT_CERT
         },
         types: [{
           type: `Project`,
