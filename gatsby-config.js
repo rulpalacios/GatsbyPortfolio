@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
     title: `Full-Stack Software Engineer`,
@@ -31,13 +35,13 @@ module.exports = {
       resolve: `gatsby-source-firestore`,
       options: {
         appConfig: {
-          apiKey: GATSBY_API_KEY,
-          authDomain: GATSBY_AUTH_DOMAIN,
-          databaseURL: GATSBY_DATABASE_URL,
-          projectId: GATSBY_PROJECT_ID,
-          storageBucket: GATSBY_STORAGE_BUCKET,
-          messagingSenderId: GATSBY_MESSAGING_SENDER,
-          appID: GATSBY_APP_ID,
+          apiKey: "AIzaSyBitAc2U9S0ZHUXsMk2JV_iA3Uf00W7Kns",
+          authDomain: "portfolio-2d0d5.firebaseapp.com",
+          databaseURL: "https://portfolio-2d0d5.firebaseio.com",
+          projectId: "portfolio-2d0d5",
+          storageBucket: "portfolio-2d0d5.appspot.com",
+          messagingSenderId: "550887960769",
+          appId: "1:550887960769:web:e6490c96b9c2cb73"
         },
         types: [{
           type: `Project`,
