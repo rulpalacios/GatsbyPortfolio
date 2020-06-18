@@ -31,13 +31,13 @@ module.exports = {
       resolve: `gatsby-source-firestore`,
       options: {
         appConfig: {
-          apiKey: API_KEY,
-          authDomain: AUTH_DOMAIN,
-          databaseURL: DATABASE_URL,
-          projectId: PROJECT_ID,
-          storageBucket: STORAGE_BUCKET,
-          messagingSenderId: MESSAGING_SENDER,
-          appID: APP_ID,
+          apiKey: GATSBY_API_KEY,
+          authDomain: GATSBY_AUTH_DOMAIN,
+          databaseURL: GATSBY_DATABASE_URL,
+          projectId: GATSBY_PROJECT_ID,
+          storageBucket: GATSBY_STORAGE_BUCKET,
+          messagingSenderId: GATSBY_MESSAGING_SENDER,
+          appID: GATSBY_APP_ID,
         },
         types: [{
           type: `Project`,
