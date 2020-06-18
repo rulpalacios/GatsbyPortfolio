@@ -34,15 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-source-firestore`,
       options: {
-        appConfig: {
-          apiKey: "AIzaSyBitAc2U9S0ZHUXsMk2JV_iA3Uf00W7Kns",
-          authDomain: "portfolio-2d0d5.firebaseapp.com",
-          databaseURL: "https://portfolio-2d0d5.firebaseio.com",
-          projectId: "portfolio-2d0d5",
-          storageBucket: "portfolio-2d0d5.appspot.com",
-          messagingSenderId: "550887960769",
-          appId: "1:550887960769:web:e6490c96b9c2cb73"
-        },
+        credential: require('./firebase.json'),
         types: [{
           type: `Project`,
           collection: `projects`,
