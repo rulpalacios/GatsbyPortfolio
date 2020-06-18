@@ -32,12 +32,12 @@ module.exports = {
       options: {
         credential: {
           "apiKey": process.env.GATSBY_API_KEY,
-          "authDomain": "portfolio-2d0d5.firebaseapp.com",
-          "databaseURL": "https://portfolio-2d0d5.firebaseio.com",
-          "projectId": "portfolio-2d0d5",
-          "storageBucket": "portfolio-2d0d5.appspot.com",
-          "messagingSenderId": "550887960769",
-          "appId": "1:550887960769:web:e6490c96b9c2cb73"
+          "authDomain": process.env.GATSBY_AUTH_DOMAIN,
+          "databaseURL": process.env.GATSBY_DB_URL,
+          "projectId": process.env.GATSBY_PROJECT_ID,
+          "storageBucket": process.env.GATSBY_STORAGE_BUCKET,
+          "messagingSenderId": process.env.GATSBY_MESSAGING_SENDER,
+          "appId": process.env.GATSBY_APP_ID
         },
         types: [{
           type: `Project`,
