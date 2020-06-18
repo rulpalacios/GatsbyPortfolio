@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
-})
-
 module.exports = {
   siteMetadata: {
     title: `Full-Stack Software Engineer`,
@@ -34,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-firestore`,
       options: {
-        credential: require('./firebase.json'),
+        credential: require("./firebase.json"),
         types: [{
           type: `Project`,
           collection: `projects`,
