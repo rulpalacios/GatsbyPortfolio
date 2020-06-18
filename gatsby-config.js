@@ -47,7 +47,7 @@ module.exports = {
           "auth_uri": process.env.GATSBY_AUTH_URI,
           "token_uri": process.env.GATSBY_TOKEN_URI,
           "auth_provider_x509_cert_url": process.env.GATSBY_AUTH_PROVIDER,
-          "client_x509_cert_url":process.env.GATSBY_CLIENT_CERT
+          "client_x509_cert_url":process.env.GATSBY_CLIENT_CERT,
         },
         types: [{
           type: `Project`,
