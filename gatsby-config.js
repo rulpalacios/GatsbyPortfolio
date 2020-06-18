@@ -30,7 +30,15 @@ module.exports = {
     {
       resolve: `gatsby-source-firestore`,
       options: {
-        credential: require("./firebase-key.json"),
+        appConfig: {
+          apiKey: $API_KEY,
+          authDomain: $AUTH_DOMAIN,
+          databaseURL: $DATABASE_URL,
+          projectId: $PROJECT_ID,
+          storageBucket: $STORAGE_BUCKET,
+          messagingSenderId: $MESSAGING_SENDER,
+          appID: $APP_ID,
+        },
         types: [{
           type: `Project`,
           collection: `projects`,
