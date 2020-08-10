@@ -111,7 +111,7 @@ h1, p {
 
 .bio {
   padding: 9rem 1.5rem;
-  background-color: #8C43FF;
+  background-color: #282A36;
   color: #FFFFFF;
   font-family: "Cabin", sans-serif; }
 
@@ -144,9 +144,9 @@ h1, p {
 .image-icon {
   margin: 0 !important;
   height: 60px !important;
-  fill: #8C43FF;
-  color: #8C43FF;
-  filter: #8C43FF; }
+  fill: #282A36;
+  color: #282A36;
+  filter: #282A36; }
 
 section {
   display: block; }
